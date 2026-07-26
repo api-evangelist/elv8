@@ -1,7 +1,28 @@
 aid: elv8
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/elv8.png
 name: ELV8
-description: ELV8 is a company surfaced as a portfolio company of techstars and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  ELV8 Inc. operates Scout, a financial platform built for college athletes and
+  athletic departments navigating Name, Image, and Likeness (NIL) income. Scout
+  provides NIL income tracking and management, financial education with one-on-one
+  coaching, payment processing for schools (per diems, bonuses, and NIL payments),
+  roster cap-management and compliance tooling, and business-setup assistance such
+  as LLC formation and tax filing. ELV8 Inc. is an SEC-registered investment adviser
+  and works with 30-plus college athletic programs serving thousands of athletes.
+  It was surfaced as a Techstars-backed portfolio company and added to the API
+  Evangelist network. Scout is a consumer/institutional fintech product and does not
+  currently publish a public developer API, SDKs, or API documentation.
 url: https://raw.githubusercontent.com/api-evangelist/elv8/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +32,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Fintech
+- Financial Services
+- NIL
+- College Athletics
+- Payments
+- Investment Advisory
+- Compliance
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +49,16 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/elv8-domain-security.yml
 - type: Website
-  url: https://investwithscout.com/
+  url: https://www.scout-financial.com/
+- type: TermsOfService
+  url: https://s3.us-east-1.amazonaws.com/scout.prod.public.documents/legal/Scout+Terms+of+Use+(10.29.2024).pdf
+- type: PrivacyPolicy
+  url: https://s3.us-east-1.amazonaws.com/scout.prod.public.documents/legal/Scout+Privacy+Policy+2025.pdf
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
